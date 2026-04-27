@@ -1,0 +1,7 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "./wuphf --web-port ${PORT:-7891} --no-open --no-nex"
+healthcheckPath = "/"
+healthcheckTimeout = 60
